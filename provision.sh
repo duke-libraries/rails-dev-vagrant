@@ -106,19 +106,19 @@ echo
 #
 # check for java
 #
-echo
-echo 'check for java jre 8'
-echo '--------------------'
-java_version="$(java -version 2>&1)"
-if echo $java_version 2>&1 | grep -q 'java version "1.8'; then
-    echo 'java jre 8 already installed'
-else
-    echo 'installing openjdk-8-jre-headless'
-    add-apt-repository ppa:webupd8team/java -y
-    apt-get update -y
-    apt-get install oracle-java8-installer -y
-fi
-echo
+# echo
+# echo 'check for java jre 8'
+# echo '--------------------'
+# java_version="$(java -version 2>&1)"
+# if echo $java_version 2>&1 | grep -q 'java version "1.8'; then
+#     echo 'java jre 8 already installed'
+# else
+#     echo 'installing openjdk-8-jre-headless'
+#     add-apt-repository ppa:webupd8team/java -y
+#     apt-get update -y
+#     apt-get install oracle-java8-installer -y
+# fi
+# echo
 
 
 #
@@ -190,6 +190,6 @@ echo
 
 # install MySQL and requirements
 apt-get install mysql-client-core-5.5 -y
-apt-get install libmysql-ruby libmysqlclient-dev -y
+apt-get install ruby-mysql libmysqlclient-dev -y
 
 echo
