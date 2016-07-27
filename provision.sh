@@ -114,7 +114,9 @@ if echo $java_version 2>&1 | grep -q 'java version "1.8'; then
     echo 'java jre 8 already installed'
 else
     echo 'installing openjdk-8-jre-headless'
-    apt-get install openjdk-8-jre-headless -y
+    add-apt-repository ppa:webupd8team/java -y
+    apt-get update -y
+    apt-get install oracle-java8-installer -y
 fi
 echo
 
