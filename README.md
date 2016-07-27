@@ -8,7 +8,7 @@
 
 3. Clone this repository
 
-4. Run `vagrant up`.
+4. Run `vagrant up`
 
 5. (Optional) The provisioning script doesn't install java correctly. To install java:
 
