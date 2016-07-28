@@ -18,3 +18,7 @@
     sudo apt-get update
     sudo apt-get install oracle-java8-installer
     ```
+
+## Using Vagrant on Windows
+
+You will need to have ssh.exe on your path to connect to vagrant. Git installs one, but you may still need to add it to your path.
