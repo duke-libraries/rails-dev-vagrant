@@ -8,9 +8,11 @@
 
 3. Clone this repository
 
-4. Run `vagrant up`
+4. Change to project directory `cd rails-dev-vagrant`
 
-5. (Optional) The provisioning script doesn't install java correctly. To install java:
+5. Run `vagrant up`
+
+6. (Optional) The provisioning script doesn't install java correctly. To install java:
 
     ```
     vagrant ssh
@@ -21,4 +23,4 @@
 
 ## Using Vagrant on Windows
 
-You will need to have ssh.exe on your path to connect to vagrant. Git installs one, but you may still need to add it to your path.
+You will need to have ssh.exe on your path to connect to Vagrant. Git installs one, but you may still need to add it to your path.
