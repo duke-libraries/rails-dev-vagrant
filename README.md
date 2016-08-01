@@ -12,7 +12,9 @@
 
 5. Run `vagrant up`
 
-6. (Optional) The provisioning script doesn't install java correctly. To install java:
+6. Connect to Vagrant `vagrant ssh`. (See note about Windows, below.)
+
+7. (Optional) The provisioning script doesn't install java correctly. To install java:
 
     ```
     vagrant ssh
