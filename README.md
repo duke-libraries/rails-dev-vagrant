@@ -6,15 +6,20 @@
 
 2. Install [Vagrant](https://www.vagrantup.com/downloads.html)
 
-3. Clone this repository
+3. If Windows is the host operating system you will need to set up PuTTY for use with Vagrant or have ssh.exe on your path. See notes below.
 
-4. Change to project directory `cd rails-dev-vagrant`
+4. Clone this repository
 
-5. Run `vagrant up`
+    ``` git clone git@github.com:duke-libraries/rails-dev-vagrant.git``` 
 
-6. Connect to Vagrant `vagrant ssh`. (See note about Windows, below.)
 
-7. (Optional) The provisioning script doesn't install java correctly. To install java:
+5. Change to project directory `cd rails-dev-vagrant`
+
+6. Run `vagrant up`
+
+7. Connect to Vagrant `vagrant ssh`
+
+8. The provisioning script doesn't install java correctly. To install java:
 
     ```
     vagrant ssh
@@ -23,6 +28,19 @@
     sudo apt-get install oracle-java8-installer
     ```
 
-## Using Vagrant on Windows
+## Using Vagrant on Windows with PuTTY
 
-You will need to have ssh.exe on your path to connect to Vagrant. Git installs one, but you may still need to add it to your path.
+Follow instructions from: [http://blog.osteel.me/posts/2015/01/25/how-to-use-vagrant-on-windows.html](http://blog.osteel.me/posts/2015/01/25/how-to-use-vagrant-on-windows.html)
+
+1. [Download PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) if don't already have it (the first putty.exe link will do). 
+				
+2. Download puttygen.exe as well (from the same URL), to get the private key.
+
+3. Load	the private key:
+	
+    File-> Load private key:
+
+	C:\Users\ad96\TRLN_workspace\rails-dev-vagrant-master\.vagrant\machines\default\virtualbox\private_key
+	
+	(Adjust path for your username and working directory structure.)
+
